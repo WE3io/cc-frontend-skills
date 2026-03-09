@@ -1,10 +1,10 @@
 # Theme Examples
 
-このドキュメントでは、具体的なテーマ例とその実装ガイドラインを提供します。
+This document provides concrete theme implementations and application guidelines.
 
 ## 1. Nordic Minimal
 
-**コンセプト：** スカンジナビアデザインにインスパイアされた、機能美と静謐さ
+**Concept:** Inspired by Scandinavian design — functional beauty and quiet serenity.
 
 ```css
 :root {
@@ -26,18 +26,18 @@
 }
 ```
 
-**特徴：**
+**Characteristics:**
 
-- 温かみのある白背景
-- テラコッタのアクセント
-- 大胆な余白
-- セリフ見出し × サンセリフ本文
+- Warm white background
+- Terracotta accent
+- Bold use of whitespace
+- Serif heading paired with sans-serif body
 
 ---
 
 ## 2. Neon Brutalism
 
-**コンセプト：** ブルータリズムとサイバーパンクの融合、大胆で反抗的
+**Concept:** Brutalism meets cyberpunk — bold, unapologetic, and rebellious.
 
 ```css
 :root {
@@ -61,18 +61,18 @@
 }
 ```
 
-**特徴：**
+**Characteristics:**
 
-- 高コントラスト
-- ハードシャドウ（ドロップシャドウなし）
-- モノスペースフォント
-- 太いボーダー
+- High contrast
+- Hard shadows (no soft drop shadows)
+- Monospace body font
+- Heavy borders
 
 ---
 
 ## 3. Organic Growth
 
-**コンセプト：** 自然と持続可能性、有機的な形状と穏やかな色調
+**Concept:** Nature and sustainability — organic shapes and calm, earthy tones.
 
 ```css
 :root {
@@ -94,18 +94,18 @@
 }
 ```
 
-**特徴：**
+**Characteristics:**
 
-- アースカラーパレット
-- 有機的なブロブシェイプ
-- 手書き風アクセント
-- テクスチャ背景
+- Earth-tone palette
+- Organic blob shapes
+- Hand-drawn style accents
+- Textured backgrounds
 
 ---
 
 ## 4. Tech Noir
 
-**コンセプト：** ダークモードファースト、洗練されたテック感
+**Concept:** Dark-mode first — refined and sophisticated with a tech edge.
 
 ```css
 :root {
@@ -134,18 +134,18 @@
 }
 ```
 
-**特徴：**
+**Characteristics:**
 
-- 深いネイビー背景
-- グロー効果のアクセント
-- グラデーションのポイント使用
-- モダンなサンセリフ
+- Deep navy background
+- Glow-effect accents
+- Gradient used as a point of interest, not a background wash
+- Modern sans-serif throughout
 
 ---
 
 ## 5. Editorial Elegance
 
-**コンセプト：** 雑誌のような洗練されたエディトリアルデザイン
+**Concept:** Magazine-inspired editorial design — refined, authoritative, and typographically rich.
 
 ```css
 :root {
@@ -169,21 +169,21 @@
 }
 ```
 
-**特徴：**
+**Characteristics:**
 
-- クラシックなセリフ体
-- 赤のアクセント（見出し・リンク）
-- 65文字幅のコラム
-- 豊富な余白と行間
+- Classic serif typography throughout
+- Red accent for headings and links
+- 65-character column width for optimal readability
+- Generous whitespace and line-height
 
 ---
 
 ## Application Guidelines
 
-### テーマ適用時のチェックリスト
+### Theme Application Checklist
 
-- [ ] CSS変数として定義し、一貫性を確保
-- [ ] ダークモード/ライトモードの両方を考慮
-- [ ] アクセシビリティ（コントラスト比4.5:1以上）を確認
-- [ ] レスポンシブ時のフォントサイズ調整
-- [ ] インタラクティブ要素のホバー/フォーカス状態を定義
+- [ ] Define all values as CSS custom properties for consistency
+- [ ] Account for both dark mode and light mode variants
+- [ ] Verify accessibility — minimum contrast ratio of 4.5:1 for text
+- [ ] Adjust font sizes responsively across breakpoints
+- [ ] Define hover and focus states for all interactive elements

@@ -1,152 +1,149 @@
 ---
 name: frontend-design-system
-description: フロントエンドUIデザインを洗練された独自性のあるスタイルで生成します。ランディングページ、ダッシュボード、Webアプリケーションのデザイン、UIコンポーネント作成時に使用してください。「AIっぽい」汎用デザインを避け、プロフェッショナルで記憶に残るUIを実現します。
+description: Generates refined, distinctive frontend UI designs. Use when creating landing pages, dashboards, web applications, or UI components. Avoids generic "AI slop" aesthetics in favour of professional, memorable interfaces.
 ---
 
 # Frontend Design System
 
 ## Overview
 
-このスキルは、AIが生成しがちな「汎用的で無個性なデザイン」を避け、洗練された独自性のあるフロントエンドUIを作成するためのガイドラインです。
+This skill provides guidelines for creating polished, distinctive frontend UIs that avoid the generic, characterless aesthetics that AI-generated interfaces tend to produce.
 
-## Anti-Patterns（避けるべきパターン）
+## Anti-Patterns
 
-以下のパターンは「AIスロップ美学」と呼ばれ、避けるべきです：
-
-### Typography（タイポグラフィ）
-
-- ❌ Inter, Roboto, Open Sans などの過度に使用されたフォント
-- ❌ すべてのテキストに同じフォントファミリーを使用
-- ❌ 標準的なフォントウェイトのみの使用
-
-### Colors（カラー）
-
-- ❌ 紫からピンクへのグラデーション
-- ❌ 汎用的な青/緑のアクセントカラー
-- ❌ 彩度の高すぎるネオンカラー
-- ❌ デフォルトのTailwindカラーパレットそのまま
-
-### Layout（レイアウト）
-
-- ❌ 左テキスト・右画像の標準ヒーローセクション
-- ❌ 3カラムの均等グリッド機能セクション
-- ❌ 中央揃えの単調なカードレイアウト
-
-### Effects（エフェクト）
-
-- ❌ 過度なぼかし効果（blur）
-- ❌ 全要素へのアニメーション適用
-- ❌ グラスモーフィズムの乱用
-
-## Best Practices（推奨パターン）
+The following patterns produce what is known as "AI slop aesthetics" — avoid them:
 
 ### Typography
 
-**推奨フォントの組み合わせ例：**
-
-| ヘッダー         | ボディ          | 特徴                   |
-| ---------------- | --------------- | ---------------------- |
-| Playfair Display | Source Sans Pro | クラシック＆モダン     |
-| Space Grotesk    | Inter           | テック＆ミニマル       |
-| Fraunces         | Work Sans       | エレガント＆読みやすい |
-| DM Serif Display | DM Sans         | 統一感のある対比       |
-| Syne             | Outfit          | 大胆＆現代的           |
-
-**タイポグラフィ原則：**
-
-- 見出しと本文で異なるフォントファミリーを使用（セリフ×サンセリフの組み合わせ）
-- フォントウェイトのバリエーションを活用（300, 400, 600, 800）
-- レタースペーシングで視覚的階層を作成
+- ❌ Overused fonts: Inter, Roboto, Open Sans
+- ❌ The same font family for all text
+- ❌ Only standard font weights
 
 ### Colors
 
-**カラーパレット構築原則：**
-
-```
-プライマリ：ブランドアイデンティティを表す主色
-セカンダリ：プライマリを補完する色（補色または類似色）
-アクセント：CTAやハイライトに使用する注目色
-ニュートラル：背景やテキストに使用するグレー系
-```
-
-**独自性を出すテクニック：**
-
-- HSL調整で微妙な色相のずれを作る
-- ダークモードでは彩度を下げ、明度を調整
-- セマンティックカラー（success, warning, error）もブランドに合わせて調整
+- ❌ Purple-to-pink gradients
+- ❌ Generic blue or green accent colors
+- ❌ Oversaturated neon colors
+- ❌ Default Tailwind color palette used as-is
 
 ### Layout
 
-**差別化するレイアウトパターン：**
+- ❌ Standard hero section: text left, image right (50/50 split)
+- ❌ Three-column equal-width feature grids
+- ❌ Centre-aligned uniform card layouts
 
-- 非対称グリッド（5:7, 2:3比率）
-- オーバーラップ要素とネガティブマージン
-- 斜めのセクション区切り
-- ベントグリッドと有機的な配置
-- 大胆な余白（ホワイトスペース）の活用
+### Effects
+
+- ❌ Excessive blur effects
+- ❌ Animations applied to every element
+- ❌ Overused glassmorphism
+
+## Best Practices
+
+### Typography
+
+**Recommended font pairings:**
+
+| Heading          | Body            | Character                    |
+| ---------------- | --------------- | ---------------------------- |
+| Playfair Display | Source Sans Pro | Classic meets modern         |
+| Space Grotesk    | Inter           | Tech, minimal                |
+| Fraunces         | Work Sans       | Elegant, highly readable     |
+| DM Serif Display | DM Sans         | Cohesive contrast            |
+| Syne             | Outfit          | Bold, contemporary           |
+
+**Typography principles:**
+
+- Use different font families for headings and body (pair serif with sans-serif)
+- Leverage font weight variation (300, 400, 600, 800)
+- Use letter-spacing to create visual hierarchy
+
+### Colors
+
+**Palette construction:**
+
+```
+Primary:   The brand's main identity color
+Secondary: Complements the primary (complementary or analogous)
+Accent:    A high-attention color for CTAs and highlights
+Neutral:   Greys for backgrounds and body text
+```
+
+**Techniques for distinctiveness:**
+
+- Use HSL adjustments to introduce subtle hue shifts
+- In dark mode: reduce saturation, adjust lightness rather than just inverting
+- Customise semantic colors (success, warning, error) to match the brand
+
+### Layout
+
+**Differentiating layout patterns:**
+
+- Asymmetric grids (5:7 or 2:3 ratios)
+- Overlapping elements with negative margins
+- Diagonal section dividers
+- Bento grids and organic arrangements
+- Bold use of whitespace
 
 ### Animation & Motion
 
-**効果的なアニメーション原則：**
+**Effective animation principles:**
 
-1. **高影響度の瞬間に集中**
-   - ページロード時の単一の調整されたアニメーション
-   - ユーザーアクション（クリック、ホバー）への即座のフィードバック
-   - 状態変化（成功、エラー）の視覚的表現
+1. **Focus on high-impact moments**
+   - A single, well-timed animation on page load
+   - Immediate feedback on user actions (click, hover)
+   - Visual representation of state changes (success, error)
 
-2. **タイミングの指針**
-   - マイクロインタラクション: 150-300ms
-   - ページ遷移: 300-500ms
-   - 複雑なアニメーション: 500-800ms
+2. **Timing guidelines**
+   - Micro-interactions: 150–300ms
+   - Page transitions: 300–500ms
+   - Complex animations: 500–800ms
 
-3. **イージング関数**
+3. **Easing functions**
    ```css
-   /* 推奨イージング */
-   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+   --ease-out-expo:     cubic-bezier(0.16, 1, 0.3, 1);
+   --ease-out-quart:    cubic-bezier(0.25, 1, 0.5, 1);
    --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
    ```
 
 ### Background & Texture
 
-**背景デザインのアイデア：**
+**Background design ideas:**
 
-- 微妙なノイズテクスチャ
-- 幾何学的パターン（控えめに）
-- グラデーションメッシュ
-- 抽象的なブロブ/シェイプ
-- パララックス効果のある背景レイヤー
+- Subtle noise texture
+- Geometric patterns (used sparingly)
+- Gradient mesh
+- Abstract blobs / shapes
+- Parallax background layers
 
 ## Implementation Checklist
 
-進捗チェックリスト：
-
-- [ ] タイポグラフィ：見出しと本文に異なるフォントを選定
-- [ ] カラーパレット：5色以上の調和したパレットを作成
-- [ ] レイアウト：非対称または独自のグリッドシステムを検討
-- [ ] アニメーション：1-2の高影響度アニメーションを実装
-- [ ] 背景：テクスチャまたは独自の背景要素を追加
-- [ ] 一貫性：すべての要素がデザインシステムに従っているか確認
+- [ ] Typography: select distinct heading and body fonts
+- [ ] Color palette: build a cohesive palette of 5+ colors
+- [ ] Layout: consider an asymmetric or non-standard grid system
+- [ ] Animation: implement 1–2 high-impact animations
+- [ ] Background: add a texture or distinctive background element
+- [ ] Consistency: verify all elements conform to the design system
 
 ## Theme Examples
 
-詳細なテーマ例については以下を参照：
+For detailed theme implementations see:
 
-- [テーマ例集](themes.md)
-- [コンポーネントリファレンス](components.md)
+- [Theme examples](themes.md)
+- [Component reference](components.md)
 
 ## Quick Reference
 
-**フォントペアリング即決リスト：**
+**Font pairing cheat sheet:**
 
-1. モダン・クリーン → Space Grotesk + Inter
-2. エレガント・高級 → Playfair Display + Lato
-3. テック・スタートアップ → Syne + Outfit
-4. 温かみ・親しみやすい → Fraunces + Work Sans
-5. 大胆・クリエイティブ → DM Serif Display + DM Sans
+1. Modern & clean → Space Grotesk + Inter
+2. Elegant & premium → Playfair Display + Lato
+3. Tech startup → Syne + Outfit
+4. Warm & approachable → Fraunces + Work Sans
+5. Bold & creative → DM Serif Display + DM Sans
 
-**カラー参考：**
+**Color resources:**
 
-- Coolors.co で調和したパレット生成
-- Realtime Colors でライブプレビュー
-- Happy Hues でインスピレーション
+- Coolors.co — generate harmonious palettes
+- Realtime Colors — live preview
+- Happy Hues — inspiration

@@ -1,17 +1,17 @@
 # Component Design Reference
 
-このドキュメントでは、独自性のあるコンポーネント設計のガイドラインを提供します。
+This document provides guidelines for designing distinctive, non-generic UI components.
 
 ## Button Components
 
-### 避けるべきパターン
+### Anti-Pattern
 
 ```jsx
-// ❌ 汎用的すぎる
+// ❌ Too generic
 <button className="bg-blue-500 text-white px-4 py-2 rounded">Click me</button>
 ```
 
-### 推奨パターン
+### Recommended Patterns
 
 #### Brutalist Button
 
@@ -49,7 +49,7 @@
 </button>
 ```
 
-#### Glassmorphic Button（控えめに使用）
+#### Glassmorphic Button (use sparingly)
 
 ```jsx
 <button
@@ -71,7 +71,7 @@
 
 ## Card Components
 
-### 独自性のあるカードパターン
+### Distinctive Card Patterns
 
 #### Overlapping Card
 
@@ -113,18 +113,18 @@
 
 ## Hero Sections
 
-### 避けるべきレイアウト
+### Layout to Avoid
 
 ```
-[    Text     ] [   Image   ]  ← 50/50の均等分割
+[    Text     ] [   Image   ]  ← Equal 50/50 split
 ```
 
-### 推奨レイアウト
+### Recommended Layouts
 
 #### Asymmetric Split
 
 ```
-[  Text  ] [      Large Image      ]  ← 35/65の非対称
+[  Text  ] [      Large Image      ]  ← 35/65 asymmetric
 ```
 
 ```jsx
