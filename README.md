@@ -58,7 +58,8 @@ This prompt is taken from the demo of Google Antigravity ([Youtube Link](https:/
 
 ## Resources
 
-- [SKILL.md](skills/frontend-design-system/SKILL.md) - Design guidelines
+- [AGENTS.md](AGENTS.md) - Compressed design principles (always-active context)
+- [SKILL.md](skills/frontend-design-system/SKILL.md) - Full design guidelines
 - [themes.md](skills/frontend-design-system/themes.md) - Theme implementations
 - [components.md](skills/frontend-design-system/components.md) - Component patterns
 
